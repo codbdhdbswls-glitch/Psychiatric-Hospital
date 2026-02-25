@@ -670,8 +670,12 @@ export const Game = () => {
                 {Object.values(PATIENTS).filter(p => p.floor === floor).map(patient => (
                     <div key={patient.id} className="mb-8 border-b border-stone-900 pb-8 last:border-0">
                         <div className="flex items-start gap-4 mb-6">
-                            <div className="w-20 h-20 rounded-sm bg-stone-900 border border-stone-800 flex items-center justify-center text-3xl shadow-inner" style={{ color: patient.color }}>
-                                ☠
+                            <div className="w-20 h-20 rounded-sm bg-stone-900 border border-stone-800 flex items-center justify-center text-3xl shadow-inner overflow-hidden" style={{ color: patient.color }}>
+                                {patient.image ? (
+                                    <img src={patient.image} alt={patient.name} className="w-full h-full object-cover" />
+                                ) : (
+                                    "☠"
+                                )}
                             </div>
                             <div className="flex-1">
                                 <div className="text-lg font-bold text-stone-200 font-pixel">{patient.name}</div>

@@ -23,6 +23,7 @@ export interface CharacterProfile {
   riskLevel: 'Low' | 'Medium' | 'High' | 'Severe';
   floor: number;
   color: string; // Hex code for sprite representation
+  image?: string; // URL for profile image
   dialogues: string[];
 }
 
@@ -48,6 +49,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "Severe",
     floor: 5,
     color: "#E2E8F0", // Slate 200 (White-ish)
+    image: "https://i.postimg.cc/6QBgv3fT/004.png",
     dialogues: [
       "...",
       "이미 끝났어. 살아있는 척할 필요 없어.",
@@ -75,6 +77,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "High",
     floor: 3,
     color: "#EF4444", // Red 500
+    image: "https://i.postimg.cc/2SRPCTqT/003.png",
     dialogues: [
       "넌 누구지? 진짜 의사는 어디로 보냈어?",
       "냄새가 달라... 넌 그 사람이 아니야.",
@@ -102,6 +105,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "High",
     floor: 4,
     color: "#854D0E", // Yellow 800 (Brownish)
+    image: "https://i.postimg.cc/rpq3rmNZ/005.png",
     dialogues: [
       "이거... 만져봐도 돼?",
       "아픈 게 왜 문제야?",
@@ -129,6 +133,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "Medium",
     floor: 3,
     color: "#3B82F6", // Blue 500
+    image: "https://i.postimg.cc/K8MsVTJq/009.png",
     dialogues: [
       "또 얼굴 바꿨네. 소용없어.",
       "아까 그 간호사지? 옷만 갈아입으면 모를 줄 알았어?",
@@ -156,6 +161,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "Medium",
     floor: 3,
     color: "#D6D3D1", // Stone 300
+    image: "https://i.postimg.cc/VN1QW4mC/002.png",
     dialogues: [
       "지금 움직였어. 보여? 왜 너만 못 봐?",
       "이거 봐, 여기 불룩 튀어나왔잖아! 벌레야!",
@@ -183,6 +189,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "Medium",
     floor: 4,
     color: "#A8A29E", // Stone 400
+    image: "https://i.postimg.cc/qB9kCsh2/008.png",
     dialogues: [
       "당신도 느꼈잖아요. 거짓말하지 마.",
       "아까 저를 보고 웃으셨죠? 그건 신호였어요.",
@@ -210,6 +217,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "High",
     floor: 5,
     color: "#166534", // Green 700
+    image: "https://i.postimg.cc/6q8DpmLH/001.png",
     dialogues: [
       "이건 내 게 아니야. 떼어내야 맞아.",
       "도끼... 아니면 톱이라도 있어?",
@@ -237,6 +245,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "Medium",
     floor: 4,
     color: "#FACC15", // Yellow 400
+    image: "https://i.postimg.cc/wvGGZk8Z/007.png",
     dialogues: [
       "시청자들 들리죠? 난 다 알고 있어.",
       "카메라 끄라고 해! 이번 시즌은 끝났어!",
@@ -265,6 +274,7 @@ export const PATIENTS: Record<CharacterId, CharacterProfile> = {
     riskLevel: "Severe",
     floor: 6,
     color: "#475569", // Slate 600
+    image: "https://i.postimg.cc/hGMwbBCK/006.png",
     dialogues: [
       "...",
       "남은 건 필요 없어.",
